@@ -12,7 +12,13 @@ import { NotFoundPage } from './NotFoundPage';
 
 export function LocationDetailPage({ locationSlug }: { locationSlug?: string }) {
   const params = useParams<{ slug?: string }>();
-  const slug = locationSlug || params.slug;
+  let slug = locationSlug || params.slug;
+
+  if (slug && slug.startsWith('appliance-repair-')) {
+    slug = slug.replace('appliance-repair-', '');
+  } else if (slug && slug.startsWith('appliance-repiar-')) {
+    slug = slug.replace('appliance-repiar-', '');
+  }
 
   const location = slug ? getLocation(slug) : undefined;
 
@@ -20,7 +26,7 @@ export function LocationDetailPage({ locationSlug }: { locationSlug?: string }) 
     return <NotFoundPage />;
   }
 
-  const fullUrl = `/${location.slug}`;
+  const fullUrl = `/appliance-repair-${location.slug}`;
 
   const localBusinessJsonLd = {
     '@context': 'https://schema.org',
@@ -230,7 +236,7 @@ export function LocationDetailPage({ locationSlug }: { locationSlug?: string }) 
                   .map((l) => (
                     <Link
                       key={l.slug}
-                      to={`/${l.slug}`}
+                      to={`/appliance-repair-${l.slug}`}
                       className="flex items-center justify-between p-2 rounded-lg text-sm text-navy-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
                     >
                       <span>{l.name}, FL</span>

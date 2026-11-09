@@ -49,7 +49,7 @@ export function NotFoundPage() {
               {services.slice(0, 6).map((s) => (
                 <Link
                   key={s.slug}
-                  to={`/${s.slug}`}
+                  to={`/${s.slug}-deerfield-beach-fl`}
                   className="p-3 bg-navy-50 hover:bg-teal-50 rounded-lg text-sm font-medium text-navy-700 hover:text-teal-700 transition-colors flex items-center justify-between"
                 >
                   <span>{s.name}</span>

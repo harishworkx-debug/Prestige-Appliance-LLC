@@ -44,7 +44,7 @@ export function ServiceAreasPage() {
           {locations.map((loc) => (
             <Link
               key={loc.slug}
-              to={`/${loc.slug}`}
+              to={`/appliance-repair-${loc.slug}`}
               className="group bg-white rounded-2xl overflow-hidden card-hover border border-navy-100"
             >
               <div className="relative h-40 bg-navy-900 overflow-hidden">
@@ -66,10 +66,15 @@ export function ServiceAreasPage() {
                 </div>
               </div>
               <div className="p-5">
+                <div className="mb-2">
+                  <span className="inline-block text-[11px] font-mono font-medium text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded border border-teal-200">
+                    /appliance-repair-{loc.slug}
+                  </span>
+                </div>
                 <p className="text-sm text-navy-600 leading-relaxed mb-4 line-clamp-3">
                   {loc.description}
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between pt-2 border-t border-navy-50">
                   <span className="text-sm font-semibold text-teal-600 group-hover:text-teal-700">
                     Appliance Repair in {loc.name}
                   </span>

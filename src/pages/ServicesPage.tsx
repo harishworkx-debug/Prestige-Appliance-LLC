@@ -47,7 +47,7 @@ export function ServicesPage() {
             return (
               <Link
                 key={s.slug}
-                to={`/${s.slug}`}
+                to={`/${s.slug}-deerfield-beach-fl`}
                 className="group bg-white rounded-2xl overflow-hidden card-hover border border-navy-100 flex flex-col justify-between"
               >
                 <div>

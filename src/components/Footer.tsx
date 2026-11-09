@@ -54,7 +54,7 @@ export function Footer() {
               {services.map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to={`/${s.slug}`}
+                    to={`/${s.slug}-deerfield-beach-fl`}
                     className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
                   >
                     {s.name}
@@ -81,7 +81,7 @@ export function Footer() {
               {locations.map((l) => (
                 <li key={l.slug}>
                   <Link
-                    to={`/${l.slug}`}
+                    to={`/appliance-repair-${l.slug}`}
                     className="text-sm text-navy-300 hover:text-teal-400 transition-colors flex items-center justify-between"
                   >
                     <span>{l.name}, FL</span>

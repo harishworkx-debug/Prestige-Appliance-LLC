@@ -80,7 +80,7 @@ export function Header() {
                 <Link
                   to="/services"
                   className={`px-3 py-2 text-sm font-medium rounded-md transition-colors flex items-center gap-1 ${
-                    loc.pathname.startsWith('/services') || services.some(s => loc.pathname === `/${s.slug}`)
+                    loc.pathname.startsWith('/services') || services.some(s => loc.pathname === `/${s.slug}` || loc.pathname.startsWith(`/${s.slug}-`))
                       ? 'text-teal-600 font-semibold'
                       : 'text-navy-700 hover:text-teal-600'
                   }`}
@@ -94,7 +94,7 @@ export function Header() {
                       {services.map((s) => (
                         <Link
                           key={s.slug}
-                          to={`/${s.slug}`}
+                          to={`/${s.slug}-deerfield-beach-fl`}
                           className="px-3 py-2 text-sm text-navy-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg transition-colors flex items-center justify-between"
                         >
                           <span>{s.name}</span>
@@ -121,7 +121,7 @@ export function Header() {
                 <Link
                   to="/service-areas"
                   className={`px-3 py-2 text-sm font-medium rounded-md transition-colors flex items-center gap-1 ${
-                    loc.pathname.startsWith('/service-areas') || locations.some(l => loc.pathname === `/${l.slug}`)
+                    loc.pathname.startsWith('/service-areas') || locations.some(l => loc.pathname === `/${l.slug}` || loc.pathname === `/appliance-repair-${l.slug}`)
                       ? 'text-teal-600 font-semibold'
                       : 'text-navy-700 hover:text-teal-600'
                   }`}
@@ -135,7 +135,7 @@ export function Header() {
                       {locations.map((l) => (
                         <Link
                           key={l.slug}
-                          to={`/${l.slug}`}
+                          to={`/appliance-repair-${l.slug}`}
                           className="px-3 py-2 text-sm text-navy-700 hover:bg-teal-50 hover:text-teal-700 rounded-lg transition-colors flex items-center justify-between"
                         >
                           <span>{l.name}, FL</span>

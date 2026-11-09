@@ -55,21 +55,10 @@ for (const p of staticPages) {
 `;
 }
 
-// Individual Service pages (10)
-for (const s of services) {
-  xml += `  <url>
-    <loc>${baseUrl}/${s}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-`;
-}
-
-// Individual Location pages (10)
+// Individual Service Area pages (10)
 for (const l of locations) {
   xml += `  <url>
-    <loc>${baseUrl}/${l}</loc>
+    <loc>${baseUrl}/appliance-repair-${l}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

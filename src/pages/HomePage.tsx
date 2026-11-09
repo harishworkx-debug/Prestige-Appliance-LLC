@@ -157,7 +157,7 @@ export function HomePage() {
               return (
                 <Link
                   key={s.slug}
-                  to={`/${s.slug}`}
+                  to={`/${s.slug}-deerfield-beach-fl`}
                   className="group bg-white rounded-2xl overflow-hidden card-hover border border-navy-100 flex flex-col justify-between"
                 >
                   <div>
@@ -221,7 +221,7 @@ export function HomePage() {
                 title: 'Refrigerator Warm or Food Spoiling',
                 symptom: 'Soft ice cream in the freezer, rising milk temperatures, or frost buildup on the rear panel.',
                 action: 'Commonly caused by a faulty defrost system, failed evaporator motor, or clogged condenser coils.',
-                link: '/refrigerator-repair',
+                link: '/refrigerator-repair-deerfield-beach-fl',
                 linkText: 'Refrigerator Diagnosis',
               },
               {
@@ -229,7 +229,7 @@ export function HomePage() {
                 title: 'Washer Leaking or Not Draining',
                 symptom: 'Standing water inside the drum after a cycle, water pooling under the cabinet, or failure to spin.',
                 action: 'Usually indicates a blocked drain pump, worn door boot gasket, or broken drive belt coupling.',
-                link: '/washer-repair',
+                link: '/washer-repair-deerfield-beach-fl',
                 linkText: 'Washer Troubleshooting',
               },
               {
@@ -237,7 +237,7 @@ export function HomePage() {
                 title: 'Dryer Tumbling with No Heat',
                 symptom: 'Clothes remain damp after multiple cycles, excessive cycle time, or a faint burning lint smell.',
                 action: 'Often points to a burned-out heating element, blown thermal cutoff fuse, or restricted exhaust airflow.',
-                link: '/dryer-repair',
+                link: '/dryer-repair-deerfield-beach-fl',
                 linkText: 'Dryer Repair Info',
               },
               {
@@ -245,7 +245,7 @@ export function HomePage() {
                 title: 'Oven Inaccurate Baking Temperatures',
                 symptom: 'Baked goods burned on one side and raw on the other, or an oven that takes over 25 minutes to preheat.',
                 action: 'Typically caused by a weakened bake element, degraded temperature sensor, or failing igniter.',
-                link: '/oven-repair',
+                link: '/oven-repair-deerfield-beach-fl',
                 linkText: 'Oven Diagnostics',
               },
               {
@@ -253,7 +253,7 @@ export function HomePage() {
                 title: 'Dishwasher Standing Water or Smells',
                 symptom: 'Water fails to drain from the sump basin, dishes come out cloudy, or strange grinding noises occur.',
                 action: 'Frequently due to a clogged filter macerator, failed drain valve, or worn wash impeller.',
-                link: '/dishwasher-repair',
+                link: '/dishwasher-repair-deerfield-beach-fl',
                 linkText: 'Dishwasher Solutions',
               },
               {
@@ -261,7 +261,7 @@ export function HomePage() {
                 title: 'Ice Maker Slow or Leaking Water',
                 symptom: 'Tiny hollow ice cubes, ice clumping together in the tray, or water dripping down inside the freezer.',
                 action: 'Usually caused by low water inlet pressure, a cracked fill tube, or a worn ice module motor.',
-                link: '/ice-maker-repair',
+                link: '/ice-maker-repair-deerfield-beach-fl',
                 linkText: 'Ice Maker Service',
               },
             ].map((item, idx) => (
@@ -549,7 +549,7 @@ export function HomePage() {
             {locations.map((loc) => (
               <Link
                 key={loc.slug}
-                to={`/${loc.slug}`}
+                to={`/appliance-repair-${loc.slug}`}
                 className="group bg-navy-50 rounded-xl p-5 text-center border border-navy-100 card-hover"
               >
                 <MapPin className="w-7 h-7 text-teal-500 mx-auto mb-2 group-hover:scale-110 transition-transform" />

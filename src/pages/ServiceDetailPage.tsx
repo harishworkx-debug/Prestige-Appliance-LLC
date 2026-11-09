@@ -310,7 +310,7 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
               return (
                 <Link
                   key={s.slug}
-                  to={`/${s.slug}`}
+                  to={`/${s.slug}-deerfield-beach-fl`}
                   className="group bg-navy-50 p-4 rounded-xl border border-navy-100 hover:border-teal-300 hover:bg-teal-50/50 transition-all flex items-center gap-3"
                 >
                   <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-teal-600 shadow-sm flex-shrink-0">

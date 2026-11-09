@@ -1,7 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { serviceSlugs } from '@/data/services';
 import { locationSlugs } from '@/data/locations';
-import { ServiceDetailPage } from './ServiceDetailPage';
 import { LocationDetailPage } from './LocationDetailPage';
 import { ServiceLocationPage } from './ServiceLocationPage';
 import { NotFoundPage } from './NotFoundPage';
@@ -14,23 +13,42 @@ export function SlugDispatcher() {
   }
 
   let normalizedSlug = slug.toLowerCase();
+
+  // Normalize common typo: 'repiar' -> 'repair'
+  const hadRepiarTypo = normalizedSlug.includes('repiar');
+  if (hadRepiarTypo) {
+    normalizedSlug = normalizedSlug.replace(/repiar/g, 'repair');
+  }
+
   if (normalizedSlug === 'washing-machine-repair') {
     normalizedSlug = 'washer-repair';
   } else if (normalizedSlug.startsWith('washing-machine-repair-')) {
     normalizedSlug = normalizedSlug.replace('washing-machine-repair-', 'washer-repair-');
   }
 
-  // 1. Check if it's an individual service page: /{service-slug}
+  // 1. If visited with 'repiar' typo, redirect to the canonical 'repair' URL
+  if (hadRepiarTypo) {
+    return <Navigate to={`/${normalizedSlug}`} replace />;
+  }
+
+  // 2. If visited without location (e.g. /refrigerator-repair), redirect to main location Deerfield Beach URL
   if (serviceSlugs.includes(normalizedSlug)) {
-    return <ServiceDetailPage serviceSlug={normalizedSlug} />;
+    return <Navigate to={`/${normalizedSlug}-deerfield-beach-fl`} replace />;
   }
 
-  // 2. Check if it's an individual location page: /{location-slug}
+  // 3. Check if it's the Service Area landing page: /appliance-repair-{location-slug}
+  for (const l of locationSlugs) {
+    if (normalizedSlug === `appliance-repair-${l}`) {
+      return <LocationDetailPage locationSlug={l} />;
+    }
+  }
+
+  // 4. Backward-compatible redirect: if visited as bare /{location-slug} (e.g. /deerfield-beach-fl), redirect to /appliance-repair-{location-slug}
   if (locationSlugs.includes(normalizedSlug)) {
-    return <LocationDetailPage locationSlug={normalizedSlug} />;
+    return <Navigate to={`/appliance-repair-${normalizedSlug}`} replace />;
   }
 
-  // 3. Check if it matches {service-slug}-{location-slug}
+  // 5. Check if it matches {service-slug}-{location-slug}
   for (const s of serviceSlugs) {
     for (const l of locationSlugs) {
       if (`${s}-${l}` === normalizedSlug) {
@@ -39,7 +57,7 @@ export function SlugDispatcher() {
     }
   }
 
-  // 4. Fallback to 404
+  // 6. Fallback to 404
   return <NotFoundPage />;
 }
 
