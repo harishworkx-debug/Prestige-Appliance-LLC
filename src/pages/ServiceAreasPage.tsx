@@ -13,7 +13,7 @@ export function ServiceAreasPage() {
     <>
       <Seo
         title={`Appliance Repair Service Areas in South Florida | ${business.name}`}
-        description={`Prestige Appliance LLC serves ${business.primaryCity}, Boca Raton, Pompano Beach, Coconut Creek, Coral Springs, Margate, and surrounding South Florida communities. Call ${business.phoneDisplay}.`}
+        description={`Prestige Appliance LLC serves 10 South Florida communities including ${business.primaryCity}, Boca Raton, Pompano Beach, Coconut Creek, Coral Springs, Margate, Parkland, Lighthouse Point, Delray Beach, and Fort Lauderdale. Call ${business.phoneDisplay}.`}
         path="/service-areas"
         jsonLd={[orgJsonLd, breadcrumbJsonLd([{ label: 'Service Areas', to: '/service-areas' }])]}
       />
@@ -71,7 +71,7 @@ export function ServiceAreasPage() {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-semibold text-teal-600 group-hover:text-teal-700">
-                    Appliance Repair in {loc.shortName}
+                    Appliance Repair in {loc.name}
                   </span>
                   <ArrowRight className="w-4 h-4 text-teal-500 group-hover:translate-x-1 transition-transform" />
                 </div>

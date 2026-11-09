@@ -52,8 +52,8 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
   return (
     <>
       <Seo
-        title={`${service.name} in South Florida | ${business.name}`}
-        description={`Professional ${service.name} by Prestige Appliance LLC. Reliable diagnostics, quality parts, and repairs for homes in Deerfield Beach and South Florida. Call ${business.phoneDisplay}.`}
+        title={`${service.name} in ${business.primaryCity}, FL | ${business.name}`}
+        description={`Professional ${service.name} in ${business.primaryCity}, FL by ${business.name}. Reliable diagnostics, quality parts, and prompt repairs for Deerfield Beach and South Florida homes. Call ${business.phoneDisplay}.`}
         path={fullUrl}
         image={service.image}
         type="article"
@@ -63,7 +63,7 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
           faqJsonLd,
           breadcrumbJsonLd([
             { label: 'Appliance Repair Services', to: '/services' },
-            { label: service.name },
+            { label: `${service.name} in ${business.primaryCity}, FL` },
           ]),
         ]}
       />
@@ -71,7 +71,7 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
       <Breadcrumbs
         items={[
           { label: 'Appliance Repair Services', to: '/services' },
-          { label: service.name },
+          { label: `${service.name} in ${business.primaryCity}, FL` },
         ]}
       />
 
@@ -89,14 +89,14 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
         <div className="container-pro relative py-16 md:py-24">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-teal-500/15 border border-teal-500/30 text-teal-300 px-4 py-1.5 rounded-full text-sm font-medium mb-5">
-              <Icon className="w-4 h-4" />
-              Verified Appliance Service · South Florida
+              <MapPin className="w-4 h-4" />
+              Locally Based in {business.primaryCity}, {business.state} · South Florida
             </div>
             <h1 className="text-3xl md:text-5xl font-display font-bold text-white leading-[1.15] mb-5">
-              {service.name} in South Florida
+              {service.name} in {business.primaryCity}, FL
             </h1>
             <p className="text-lg md:text-xl text-navy-200 leading-relaxed mb-8 max-w-2xl">
-              {service.tagline} {service.intro}
+              {service.tagline} Based right here in {business.primaryCity}, FL, {business.name} provides fast, professional {service.shortName.toLowerCase()} throughout {business.primaryCity} and surrounding South Florida communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <CallButton size="lg" label={`Call Now: ${business.phoneDisplay}`} />
@@ -122,14 +122,14 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
                   <Icon className="w-7 h-7 text-teal-600" />
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-display font-bold text-navy-900">
-                  Comprehensive {service.shortName} Diagnostics & Repairs
+                  Comprehensive {service.shortName} in {business.primaryCity}, FL
                 </h2>
               </div>
               <p className="text-navy-700 leading-relaxed text-lg mb-4">
                 {service.intro}
               </p>
               <p className="text-navy-600 leading-relaxed">
-                When your {service.shortName.toLowerCase().replace(' repair', '')} breaks down, food can spoil, laundry piles up, or cooking comes to a sudden halt. At {business.name}, we treat appliance malfunctions with urgency. Our technicians are equipped to test electrical circuits, assess mechanical wear, inspect thermal sensors, and replace worn components promptly.
+                When your {service.shortName.toLowerCase().replace(' repair', '')} breaks down, food can spoil, laundry piles up, or cooking comes to a sudden halt. Based in {business.primaryCity}, FL, {business.name} treats appliance malfunctions with urgency. Our technicians are equipped to test electrical circuits, assess mechanical wear, inspect thermal sensors, and replace worn components promptly.
               </p>
             </div>
 
@@ -203,10 +203,10 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
           <aside className="space-y-6">
             <div className="bg-navy-50 rounded-2xl p-6 border border-navy-100">
               <h3 className="font-display font-bold text-navy-900 text-lg mb-2">
-                Need Fast {service.shortName}?
+                Need Fast {service.shortName} in {business.primaryCity}?
               </h3>
               <p className="text-sm text-navy-600 mb-5 leading-relaxed">
-                Call {business.name} directly. Speak with an experienced local specialist who understands your appliance problem.
+                Call {business.name} directly. Speak with an experienced local specialist based in {business.primaryCity}, FL serving Deerfield Beach and South Florida.
               </p>
               <CallButton size="md" className="w-full mb-4" />
               <div className="space-y-2.5 pt-4 border-t border-navy-200/60 text-xs text-navy-600">
@@ -361,9 +361,10 @@ export function ServiceDetailPage({ serviceSlug }: { serviceSlug?: string }) {
       </section>
 
       <CtaSection
-        title={`Ready for ${service.name}?`}
-        subtitle={`Speak with ${business.name} at ${business.phoneDisplay}. We diagnose and fix major appliances across Deerfield Beach, Boca Raton, and South Florida.`}
+        title={`Ready for ${service.name} in ${business.primaryCity}, FL?`}
+        subtitle={`Speak with ${business.name} at ${business.phoneDisplay}. Locally based in ${business.primaryCity}, we diagnose and fix major appliances across Deerfield Beach, Boca Raton, and South Florida.`}
       />
     </>
   );
 }
+

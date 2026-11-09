@@ -310,7 +310,7 @@ export function ServiceLocationPage() {
                       <RIcon className="w-5 h-5 text-teal-600" />
                     </div>
                     <span className="text-sm font-semibold text-navy-800 group-hover:text-teal-600 transition-colors">
-                      {s.shortName}
+                      {s.shortName} in {location.name}
                     </span>
                   </Link>
                 );

@@ -261,36 +261,46 @@ export function LocationDetailPage({ locationSlug }: { locationSlug?: string }) 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => {
               const Icon = getServiceIcon(s.icon);
+              const targetSlug = `${s.slug}-${location.slug}`;
               return (
                 <Link
                   key={s.slug}
-                  to={`/${s.slug}-${location.slug}`}
-                  className="group bg-white rounded-2xl overflow-hidden card-hover border border-navy-100 flex flex-col"
+                  to={`/${targetSlug}`}
+                  className="group bg-white rounded-2xl overflow-hidden card-hover border border-navy-100 flex flex-col justify-between"
                 >
-                  <div className="relative h-44 overflow-hidden">
-                    <img
-                      src={s.image}
-                      alt={`${s.name} in ${location.name}, FL`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 to-transparent" />
-                    <div className="absolute bottom-3 left-4 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-teal-500 flex items-center justify-center">
-                        <Icon className="w-4 h-4 text-white" />
+                  <div>
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={s.image}
+                        alt={`${s.name} in ${location.name}, FL`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/40 to-transparent" />
+                      <div className="absolute bottom-3 left-4 right-4 flex items-center gap-2.5">
+                        <div className="w-9 h-9 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0 shadow">
+                          <Icon className="w-5 h-5 text-white" />
+                        </div>
+                        <h3 className="text-white font-display font-semibold text-base sm:text-lg leading-tight">
+                          {s.name} in {location.name}, FL
+                        </h3>
                       </div>
-                      <h3 className="text-white font-display font-semibold text-base">
-                        {s.shortName}
-                      </h3>
+                    </div>
+                    <div className="p-5">
+                      <div className="mb-3">
+                        <span className="inline-block text-[11px] font-mono font-medium text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md border border-teal-200">
+                          /{targetSlug}
+                        </span>
+                      </div>
+                      <p className="text-xs sm:text-sm text-navy-600 leading-relaxed">
+                        {s.description}
+                      </p>
                     </div>
                   </div>
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <p className="text-xs sm:text-sm text-navy-600 leading-relaxed mb-4">
-                      {s.description}
-                    </p>
-                    <div className="flex items-center justify-between pt-2 border-t border-navy-50">
+                  <div className="px-5 pb-5">
+                    <div className="flex items-center justify-between pt-3 border-t border-navy-50">
                       <span className="text-xs sm:text-sm font-semibold text-teal-600 group-hover:text-teal-700">
-                        {s.shortName} in {location.shortName}
+                        View {s.shortName} in {location.name}
                       </span>
                       <ArrowRight className="w-4 h-4 text-teal-500 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -342,3 +352,4 @@ export function LocationDetailPage({ locationSlug }: { locationSlug?: string }) 
     </>
   );
 }
+

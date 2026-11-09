@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Wrench, Clock } from 'lucide-react';
+import { Phone, MapPin, Wrench, Clock, ExternalLink } from 'lucide-react';
 import { business } from '@/data/business';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
@@ -8,13 +8,14 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy-950 text-navy-200">
+    <footer className="bg-navy-950 text-navy-200 border-t border-navy-900">
       <div className="container-pro py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand Col */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center">
-                <Wrench className="w-6 h-6 text-white" />
+            <Link to="/" className="flex items-center gap-2.5 mb-4 group">
+              <div className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center shadow">
+                <Wrench className="w-5 h-5 text-white" />
               </div>
               <div className="leading-tight">
                 <span className="block font-display font-bold text-white text-lg">
@@ -24,76 +25,85 @@ export function Footer() {
                   LLC · South Florida
                 </span>
               </div>
-            </div>
-            <p className="text-sm text-navy-300 leading-relaxed mb-4">
-              A local appliance repair company based in {business.primaryCity},
-              FL, serving homeowners throughout the surrounding South Florida
-              community.
+            </Link>
+            <p className="text-sm text-navy-300 leading-relaxed mb-5">
+              A verified local appliance repair company based in {business.primaryCity},
+              FL, providing dedicated appliance repair across northern Broward and southern Palm Beach counties.
             </p>
-            <a
-              href={`tel:${business.phoneRaw}`}
-              className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-semibold transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              {business.phoneDisplay}
-            </a>
+            <div className="space-y-2">
+              <p className="text-xs uppercase tracking-wider text-navy-400 font-semibold">
+                Direct Phone Line:
+              </p>
+              <a
+                href={`tel:${business.phoneRaw}`}
+                className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-bold text-lg transition-colors"
+                aria-label={`Call Prestige Appliance LLC at ${business.phoneDisplay}`}
+              >
+                <Phone className="w-5 h-5" />
+                {business.phoneDisplay}
+              </a>
+            </div>
           </div>
 
+          {/* Services Col */}
           <div>
             <h3 className="text-white font-display font-semibold text-sm uppercase tracking-wider mb-4">
               Appliance Repair Services
             </h3>
             <ul className="space-y-2">
-              {services.slice(0, 7).map((s) => (
+              {services.map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to={`/${s.slug}-deerfield-beach-fl`}
+                    to={`/${s.slug}`}
                     className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
                   >
                     {s.name}
                   </Link>
                 </li>
               ))}
-              <li>
+              <li className="pt-1">
                 <Link
                   to="/services"
-                  className="text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors"
+                  className="text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors inline-flex items-center gap-1"
                 >
-                  View All Services →
+                  All Repair Services →
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Service Areas Col */}
           <div>
             <h3 className="text-white font-display font-semibold text-sm uppercase tracking-wider mb-4">
-              Service Areas
+              Verified Service Areas
             </h3>
             <ul className="space-y-2">
               {locations.map((l) => (
                 <li key={l.slug}>
                   <Link
                     to={`/${l.slug}`}
-                    className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
+                    className="text-sm text-navy-300 hover:text-teal-400 transition-colors flex items-center justify-between"
                   >
-                    {l.name}, FL
+                    <span>{l.name}, FL</span>
+                    <span className="text-[11px] text-navy-500">{l.county.replace(' County', '')}</span>
                   </Link>
                 </li>
               ))}
-              <li>
+              <li className="pt-1">
                 <Link
                   to="/service-areas"
-                  className="text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors"
+                  className="text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors inline-flex items-center gap-1"
                 >
-                  View All Areas →
+                  All Service Areas Overview →
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Company & Info Col */}
           <div>
             <h3 className="text-white font-display font-semibold text-sm uppercase tracking-wider mb-4">
-              Company
+              Company & Legal
             </h3>
             <ul className="space-y-2">
               <li>
@@ -129,10 +139,13 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-            <div className="mt-4 space-y-2 text-sm text-navy-300">
+
+            <div className="mt-6 space-y-2.5 text-xs text-navy-300 border-t border-navy-800/80 pt-4">
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
                 <span>
+                  {business.name}
+                  <br />
                   {business.primaryCity}, {business.state} {business.zip}
                 </span>
               </p>
@@ -140,26 +153,29 @@ export function Footer() {
                 <Clock className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
                 <span>Mon–Sat · Sun Closed</span>
               </p>
-              <a
-                href={business.googleMaps}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-sm text-teal-400 hover:text-teal-300 transition-colors"
-              >
-                Google Maps Listing →
-              </a>
+              <p>
+                <a
+                  href={business.googleMaps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-teal-400 hover:text-teal-300 transition-colors"
+                >
+                  <span>Google Maps Listing</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-navy-800">
-        <div className="container-pro py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-sm text-navy-400 text-center sm:text-left">
+      <div className="border-t border-navy-900 bg-navy-950/80">
+        <div className="container-pro py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-navy-400">
+          <p className="text-center sm:text-left">
             © {year} {business.name}. All rights reserved.
           </p>
-          <p className="text-sm text-navy-400">
-            {business.category} · {business.primaryCity}, {business.state}
+          <p className="text-center sm:text-right">
+            Phone-Only Service · Call <a href={`tel:${business.phoneRaw}`} className="text-teal-400 hover:underline">{business.phoneDisplay}</a>
           </p>
         </div>
       </div>
