@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, Search, Wrench, Sparkles, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { Seo, orgJsonLd } from '@/components/Seo';
 import { Breadcrumbs, breadcrumbJsonLd } from '@/components/Breadcrumbs';
 import { CtaSection } from '@/components/CtaSection';
@@ -12,8 +12,8 @@ export function ServicesPage() {
   return (
     <>
       <Seo
-        title={`Appliance Repair Services in ${business.primaryCity}, FL | ${business.name}`}
-        description={`Prestige Appliance LLC offers refrigerator, freezer, washer, dryer, dishwasher, oven, stove, range, cooktop, and ice maker repair in ${business.primaryCity}, FL and South Florida. Call ${business.phoneDisplay}.`}
+        title="Appliance Repair & Maintenance Services | Prestige Appliance"
+        description="Explore appliance diagnostics, appliance repair, maintenance and refurbished appliance sales from Prestige Appliance LLC in Deerfield Beach, Florida."
         path="/services"
         jsonLd={[orgJsonLd, breadcrumbJsonLd([{ label: 'Appliance Repair Services', to: '/services' }])]}
       />
@@ -22,22 +22,113 @@ export function ServicesPage() {
       <section className="container-pro py-12 md:py-16">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
-            What We Repair
+            Full-Service Appliance Care
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-navy-900 mt-2 mb-6">
-            Appliance Repair Services in {business.primaryCity}, FL
+            Professional Appliance Repair and Maintenance Services
           </h1>
-          <p className="text-lg text-navy-600 leading-relaxed">
-            {business.name} repairs the major household appliances South
-            Florida families rely on every day. Browse our services below, then
-            call{' '}
+          <p className="text-lg text-navy-600 leading-relaxed mb-4">
+            Prestige Appliance LLC offers appliance-related services designed to help homeowners maintain and restore their household equipment.
+          </p>
+          <p className="text-base text-navy-600 leading-relaxed">
+            Our service process begins with understanding the problem and identifying the appliance components that may need attention. Following the diagnostic process, we explain the available repair options so customers can make informed decisions. Call{' '}
             <a
               href={`tel:${business.phoneRaw}`}
               className="text-teal-600 font-semibold hover:text-teal-700"
             >
               {business.phoneDisplay}
             </a>{' '}
-            to schedule a repair.
+            to discuss your repair needs directly.
+          </p>
+        </div>
+
+        {/* 3 Core Service Capabilities */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="bg-navy-50/70 border border-navy-100 rounded-2xl p-6">
+            <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-600 flex items-center justify-center mb-4">
+              <Search className="w-6 h-6" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-navy-900 mb-2">
+              Appliance Diagnostics
+            </h2>
+            <p className="text-sm text-navy-600 leading-relaxed mb-4">
+              Pinpoint electrical, electronic, and mechanical failures with advanced diagnostic equipment before replacing parts.
+            </p>
+            <ul className="space-y-2 text-xs text-navy-700">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Multimeter voltage & continuity testing</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Error code readouts & control board checks</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Transparent explanation before any work</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-navy-50/70 border border-navy-100 rounded-2xl p-6">
+            <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-600 flex items-center justify-center mb-4">
+              <Wrench className="w-6 h-6" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-navy-900 mb-2">
+              Major Appliance Repairs
+            </h2>
+            <p className="text-sm text-navy-600 leading-relaxed mb-4">
+              Professional repairs for refrigerators, washers, dryers, ovens, and dishwashers using factory-approved OEM components.
+            </p>
+            <ul className="space-y-2 text-xs text-navy-700">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Compressor, pump & motor replacements</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Heating elements, igniters & thermostat swaps</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Backed by our repair warranty</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-navy-50/70 border border-navy-100 rounded-2xl p-6">
+            <div className="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-600 flex items-center justify-center mb-4">
+              <Sparkles className="w-6 h-6" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-navy-900 mb-2">
+              Appliance Maintenance
+            </h2>
+            <p className="text-sm text-navy-600 leading-relaxed mb-4">
+              Keep critical household appliances running efficiently in South Florida's high humidity and warm coastal climate.
+            </p>
+            <ul className="space-y-2 text-xs text-navy-700">
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Condenser coil cleaning & airflow tune-up</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Washer drain pump & filter descaling</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-teal-600 flex-shrink-0" />
+                <span>Dryer vent inspection for fire safety</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h2 className="text-2xl font-display font-bold text-navy-900 mb-2">
+            Browse By Appliance Type
+          </h2>
+          <p className="text-navy-600 text-sm">
+            Select an appliance below to review common signs of malfunction, causes, and local repair details in {business.primaryCity}, FL:
           </p>
         </div>
 

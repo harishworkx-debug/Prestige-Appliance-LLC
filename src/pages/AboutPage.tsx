@@ -10,8 +10,8 @@ export function AboutPage() {
   return (
     <>
       <Seo
-        title={`About ${business.name} | Local Appliance Repair in ${business.primaryCity}, FL`}
-        description={`Learn about ${business.name}, a locally based appliance repair company in ${business.primaryCity}, Florida serving South Florida homeowners. Honest service, quality repairs. Call ${business.phoneDisplay}.`}
+        title="About Prestige Appliance LLC | Deerfield Beach Appliance Experts"
+        description="Learn about Prestige Appliance LLC, a family-operated appliance service business based in Deerfield Beach, Florida, providing diagnostics, repairs and maintenance."
         path="/about"
         jsonLd={[orgJsonLd, breadcrumbJsonLd([{ label: 'About Us', to: '/about' }])]}
       />
@@ -24,31 +24,26 @@ export function AboutPage() {
               About Our Company
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-navy-900 mt-2 mb-6">
-              About {business.name}
+              About Prestige Appliance LLC
             </h1>
             <p className="text-lg text-navy-600 leading-relaxed mb-4">
-              {business.name} is a locally based appliance repair company
-              operating out of {business.primaryCity}, Florida. We are a
-              premiere full-service contractor that prides ourselves on
-              high-quality work and precise attention to detail.
+              Prestige Appliance LLC is a family-operated appliance service business based in {business.primaryCity}, Florida, located at <strong>{business.streetAddress}, {business.primaryCity}, FL {business.zip}</strong>.
             </p>
             <p className="text-navy-600 leading-relaxed mb-4">
-              When a major appliance breaks down, it disrupts your entire
-              household. That is why we focus on honest diagnostics, clear
-              communication, and dependable repairs. Our customers describe us
-              as professional, honest, and dependable — and that is the
-              standard we work to meet on every service call.
+              We understand how important household appliances are to everyday life. From refrigerators and freezers to laundry and kitchen appliances, equipment problems can interrupt normal household routines.
+            </p>
+            <p className="text-navy-600 leading-relaxed mb-4">
+              Our approach focuses on identifying appliance problems, explaining available solutions and helping customers understand the repair process.
             </p>
             <p className="text-navy-600 leading-relaxed mb-8">
-              We serve homeowners in {business.primaryCity} and the surrounding
-              South Florida community. Call us at{' '}
+              We aim to provide dependable service, clear communication and practical appliance solutions for customers throughout our confirmed South Florida service areas across northern Broward and southern Palm Beach counties. Call us directly at{' '}
               <a
                 href={`tel:${business.phoneRaw}`}
                 className="text-teal-600 font-semibold hover:text-teal-700"
               >
                 {business.phoneDisplay}
               </a>{' '}
-              to schedule a service visit.
+              to speak with our team.
             </p>
             <CallButton size="lg" />
           </div>
@@ -98,7 +93,7 @@ export function AboutPage() {
               {
                 icon: MapPin,
                 title: 'Local to South Florida',
-                text: `We are based in ${business.primaryCity}, FL. When you call, you are speaking with a local company — not a national call center.`,
+                text: `We are physically located at ${business.streetAddress}, ${business.primaryCity}, FL 33441. When you call, you speak directly with a local repair professional serving Broward and Palm Beach counties — not a third-party lead broker or national call center.`,
               },
               {
                 icon: Languages,

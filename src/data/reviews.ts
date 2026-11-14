@@ -12,7 +12,7 @@ export const googleRating = {
   scoreDisplay: "5.0",
   reviewCount: 2,
   source: "Google Reviews",
-  googleMapsUrl: "https://maps.app.goo.gl/SBeUTkRkom1UGk9G",
+  googleMapsUrl: "https://maps.app.goo.gl/U9aDCbFHWBc2hbot8",
 };
 
 export const reviews: Review[] = [

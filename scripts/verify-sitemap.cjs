@@ -19,13 +19,15 @@ function audit(xml, label) {
   }
 
   // Expected counts:
-  // 7 static
+  // 9 static
   const staticExpected = [
     'https://www.prestigeappliancellc.com/',
     'https://www.prestigeappliancellc.com/services',
     'https://www.prestigeappliancellc.com/service-areas',
     'https://www.prestigeappliancellc.com/about',
     'https://www.prestigeappliancellc.com/contact',
+    'https://www.prestigeappliancellc.com/book-online',
+    'https://www.prestigeappliancellc.com/blog',
     'https://www.prestigeappliancellc.com/privacy-policy',
     'https://www.prestigeappliancellc.com/terms-and-conditions',
   ];
@@ -35,7 +37,7 @@ function audit(xml, label) {
       process.exit(1);
     }
   }
-  console.log('7 static core pages confirmed.');
+  console.log('9 static core pages confirmed.');
 
   // 10 service areas
   const locations = [
@@ -69,6 +71,28 @@ function audit(xml, label) {
   }
   console.log('100 service-location landing pages confirmed.');
 
+  // 10 articles
+  const articles = [
+    'why-is-my-refrigerator-not-cooling',
+    'washer-not-draining-reasons',
+    'dryer-running-not-heating',
+    'oven-not-heating-properly',
+    'when-to-repair-or-replace-refrigerator',
+    'appliance-diagnostic-visit-what-to-expect',
+    'signs-dishwasher-needs-repair',
+    'common-appliance-problems-homeowners-should-know',
+    'how-often-should-appliances-be-maintained',
+    'early-signs-refrigerator-problems',
+  ];
+  for (const a of articles) {
+    const expected = `https://www.prestigeappliancellc.com/blog/${a}`;
+    if (!unique.has(expected)) {
+      console.error('Missing blog article page:', expected);
+      process.exit(1);
+    }
+  }
+  console.log('10 troubleshooting guides confirmed.');
+
   // Check no redirecting or bare urls
   for (const s of services) {
     const bad = `https://www.prestigeappliancellc.com/${s}`;
@@ -89,5 +113,5 @@ function audit(xml, label) {
 
 audit(publicXml, 'public/sitemap.xml');
 audit(distXml, 'dist/sitemap.xml');
-console.log('\n>>> ALL 117 SITEMAP URLS ARE 100% VERIFIED & ACCURATE! <<<');
+console.log('\n>>> ALL 129 SITEMAP URLS ARE 100% VERIFIED & ACCURATE! <<<');
 

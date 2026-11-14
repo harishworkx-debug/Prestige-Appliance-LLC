@@ -351,6 +351,48 @@ export function ServiceLocationPage() {
         </div>
       </section>
 
+      {/* Helpful Internal Links & Scheduling */}
+      <section className="container-pro py-8 border-t border-navy-100">
+        <div className="bg-navy-50/70 rounded-2xl p-6 md:p-8 border border-navy-100">
+          <h3 className="font-display font-bold text-navy-900 text-base md:text-lg mb-2">
+            Helpful Appliance Repair Resources for {location.name} Residents
+          </h3>
+          <p className="text-sm text-navy-600 mb-5 leading-relaxed">
+            If your {service.shortName.toLowerCase()} is not cooling, draining, or operating properly, Prestige Appliance LLC can help you understand the issue and discuss available repair options.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+            <Link
+              to="/book-online"
+              className="p-3 bg-white hover:bg-teal-50 border border-navy-100 rounded-xl text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors flex items-center justify-between"
+            >
+              <span>Schedule {service.shortName} Repair</span>
+              <ArrowRight className="w-4 h-4 text-teal-500" />
+            </Link>
+            <Link
+              to="/services"
+              className="p-3 bg-white hover:bg-teal-50 border border-navy-100 rounded-xl text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors flex items-center justify-between"
+            >
+              <span>Appliance Repair Services</span>
+              <ArrowRight className="w-4 h-4 text-teal-500" />
+            </Link>
+            <Link
+              to={`/appliance-repair-${location.slug}`}
+              className="p-3 bg-white hover:bg-teal-50 border border-navy-100 rounded-xl text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors flex items-center justify-between"
+            >
+              <span>Appliance Repair in {location.name}</span>
+              <ArrowRight className="w-4 h-4 text-teal-500" />
+            </Link>
+            <Link
+              to="/contact"
+              className="p-3 bg-white hover:bg-teal-50 border border-navy-100 rounded-xl text-sm font-semibold text-teal-700 hover:text-teal-800 transition-colors flex items-center justify-between"
+            >
+              <span>Contact Prestige Appliance</span>
+              <ArrowRight className="w-4 h-4 text-teal-500" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="bg-navy-50 section-padding">
         <div className="container-pro">

@@ -66,15 +66,24 @@ export const localBusinessJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ApplianceRepair',
   name: business.name,
+  description:
+    'Prestige Appliance LLC is a family-operated appliance service business based in Deerfield Beach, Florida, providing professional appliance diagnostics, repairs, maintenance, and refurbished appliance sales across northern Broward County and southern Palm Beach County. Se habla español.',
   telephone: business.phone,
   url: business.website,
+  priceRange: '$$',
   image: 'https://images.pexels.com/photos/4832505/pexels-photo-4832505.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: business.streetAddress,
     addressLocality: business.primaryCity,
     addressRegion: business.state,
     postalCode: business.zip,
     addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 26.3184,
+    longitude: -80.1114,
   },
   areaServed: [
     { '@type': 'City', name: 'Deerfield Beach, FL' },
@@ -88,14 +97,42 @@ export const localBusinessJsonLd = {
     { '@type': 'City', name: 'Delray Beach, FL' },
     { '@type': 'City', name: 'Fort Lauderdale, FL' },
   ],
+  sameAs: [business.googleMaps],
+  knowsLanguage: ['English', 'Spanish'],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
     reviewCount: '2',
   },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Jose Centeno' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Excellent customer service, Quality Appliances and fair prices, will recommend friends and family.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'O rey' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Called, scheduled for a repair. Came in time and has reasonable prices.',
+    },
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Appliance Repair Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Refrigerator Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Freezer Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Washing Machine Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dryer Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dishwasher Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Oven Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Stove Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Range Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cooktop Repair' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ice Maker Repair' } },
+    ],
   },
   openingHoursSpecification: business.hours
     .filter((h) => h.hours !== 'Closed')

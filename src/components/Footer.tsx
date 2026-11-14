@@ -116,6 +116,22 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  to="/blog"
+                  className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
+                >
+                  Appliance Guides
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/book-online"
+                  className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
+                >
+                  Schedule Service
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="text-sm text-navy-300 hover:text-teal-400 transition-colors"
                 >
@@ -145,6 +161,8 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
                 <span>
                   {business.name}
+                  <br />
+                  {business.streetAddress}
                   <br />
                   {business.primaryCity}, {business.state} {business.zip}
                 </span>

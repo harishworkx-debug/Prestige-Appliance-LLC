@@ -34,8 +34,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title={`${business.name} | Appliance Repair in ${business.primaryCity}, ${business.state}`}
-        description={`Trusted appliance repair in ${business.primaryCity}, FL and surrounding South Florida communities. Prestige Appliance LLC repairs refrigerators, washers, dryers, dishwashers, ovens, and more. Call ${business.phoneDisplay}.`}
+        title="Appliance Repair Deerfield Beach, FL | Prestige Appliance LLC"
+        description="Need appliance repair in Deerfield Beach, FL? Prestige Appliance LLC provides appliance diagnostics, repairs, maintenance and appliance sales. Call today to schedule service."
         path="/"
         image={heroImage}
         jsonLd={[orgJsonLd, localBusinessJsonLd, websiteJsonLd]}
@@ -59,12 +59,13 @@ export function HomePage() {
               {business.primaryCity}, {business.state} · Locally Based
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6 animate-fade-in-up">
-              Appliance Repair in {business.primaryCity}, FL
+              Reliable Appliance Repair in Deerfield Beach, FL
             </h1>
-            <p className="text-lg md:text-xl text-navy-200 leading-relaxed mb-8 max-w-xl animate-fade-in-up">
-              {business.name} is a local appliance repair company serving
-              South Florida homeowners. When your refrigerator, washer, dryer,
-              dishwasher, or oven stops working, we are a phone call away.
+            <p className="text-lg md:text-xl text-navy-200 leading-relaxed mb-6 max-w-xl animate-fade-in-up">
+              Prestige Appliance LLC provides residential appliance repair, diagnostics, and maintenance services in Deerfield Beach, Florida, and surrounding South Florida communities across Broward and Palm Beach counties.
+            </p>
+            <p className="text-base text-navy-300 leading-relaxed mb-8 max-w-xl animate-fade-in-up hidden sm:block">
+              When a refrigerator stops cooling, a washing machine will not drain, a dryer stops heating, or a dishwasher fails to complete its cycle, getting the right diagnosis is important. Our goal is to help homeowners understand their appliance problems and make informed repair decisions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
               <CallButton size="lg" label={`Call ${business.phoneDisplay}`} />
@@ -204,13 +205,13 @@ export function HomePage() {
         <div className="container-pro">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
-              Diagnostic Guide
+              Diagnostic Guide & In-Home Testing
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-navy-900 mt-2 mb-4">
-              Warning Signs You Need An Appliance Technician
+              Appliance Diagnostics & Warning Signs in {business.primaryCity}
             </h2>
             <p className="text-lg text-navy-600">
-              Catching an appliance problem early prevents catastrophic component burnout, costly water leaks, and spoiled food. If you notice any of these signs, give us a call.
+              Catching an appliance problem early through professional appliance diagnostics in {business.primaryCity} prevents catastrophic component burnout, costly water leaks, and spoiled food. If you notice any of these signs, give us a call directly.
             </p>
           </div>
 

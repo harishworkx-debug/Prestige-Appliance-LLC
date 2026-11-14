@@ -154,6 +154,22 @@ export function Header() {
               </div>
 
               <Link
+                to="/blog"
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  loc.pathname.startsWith('/blog') ? 'text-teal-600 font-semibold' : 'text-navy-700 hover:text-teal-600'
+                }`}
+              >
+                Appliance Guides
+              </Link>
+              <Link
+                to="/book-online"
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  loc.pathname === '/book-online' ? 'text-teal-600 font-semibold' : 'text-navy-700 hover:text-teal-600'
+                }`}
+              >
+                Schedule Service
+              </Link>
+              <Link
                 to="/contact"
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   loc.pathname === '/contact' ? 'text-teal-600 font-semibold' : 'text-navy-700 hover:text-teal-600'
@@ -214,6 +230,18 @@ export function Header() {
                 className="px-3 py-3 text-base font-medium text-navy-800 hover:bg-teal-50 hover:text-teal-700 rounded-lg transition-colors"
               >
                 Service Areas
+              </Link>
+              <Link
+                to="/blog"
+                className="px-3 py-3 text-base font-medium text-navy-800 hover:bg-teal-50 hover:text-teal-700 rounded-lg transition-colors"
+              >
+                Appliance Guides
+              </Link>
+              <Link
+                to="/book-online"
+                className="px-3 py-3 text-base font-medium text-navy-800 hover:bg-teal-50 hover:text-teal-700 rounded-lg transition-colors"
+              >
+                Schedule Service
               </Link>
               <Link
                 to="/contact"

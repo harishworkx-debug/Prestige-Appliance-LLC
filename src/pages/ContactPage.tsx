@@ -8,8 +8,8 @@ export function ContactPage() {
   return (
     <>
       <Seo
-        title={`Contact ${business.name} | Appliance Repair in ${business.primaryCity}, FL`}
-        description={`Contact Prestige Appliance LLC for appliance repair in ${business.primaryCity}, FL and South Florida. Call ${business.phoneDisplay}. No forms — just pick up the phone.`}
+        title="Contact Prestige Appliance LLC | Deerfield Beach, FL"
+        description="Contact Prestige Appliance LLC for appliance repair, diagnostics and maintenance in Deerfield Beach and surrounding South Florida communities. Call to schedule service."
         path="/contact"
         jsonLd={[orgJsonLd, localBusinessJsonLd, breadcrumbJsonLd([{ label: 'Contact', to: '/contact' }])]}
       />
@@ -21,7 +21,7 @@ export function ContactPage() {
             Get In Touch
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-navy-900 mt-2 mb-6">
-            Contact {business.name}
+            Contact Prestige Appliance LLC
           </h1>
           <p className="text-lg text-navy-600 leading-relaxed">
             The fastest way to get your appliance repaired is to call us
@@ -75,6 +75,8 @@ export function ContactPage() {
                   </h2>
                   <p className="text-navy-700">
                     {business.name}
+                    <br />
+                    {business.streetAddress}
                     <br />
                     {business.primaryCity}, {business.state} {business.zip}
                   </p>

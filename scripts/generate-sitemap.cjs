@@ -36,8 +36,23 @@ const staticPages = [
   { path: '/service-areas', priority: '0.9', changefreq: 'weekly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/contact', priority: '0.8', changefreq: 'monthly' },
+  { path: '/book-online', priority: '0.8', changefreq: 'weekly' },
+  { path: '/blog', priority: '0.85', changefreq: 'weekly' },
   { path: '/privacy-policy', priority: '0.4', changefreq: 'yearly' },
   { path: '/terms-and-conditions', priority: '0.4', changefreq: 'yearly' },
+];
+
+const articles = [
+  'why-is-my-refrigerator-not-cooling',
+  'washer-not-draining-reasons',
+  'dryer-running-not-heating',
+  'oven-not-heating-properly',
+  'when-to-repair-or-replace-refrigerator',
+  'appliance-diagnostic-visit-what-to-expect',
+  'signs-dishwasher-needs-repair',
+  'common-appliance-problems-homeowners-should-know',
+  'how-often-should-appliances-be-maintained',
+  'early-signs-refrigerator-problems',
 ];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -77,6 +92,17 @@ for (const s of services) {
   </url>
 `;
   }
+}
+
+// Informational Troubleshooting Guides (6)
+for (const a of articles) {
+  xml += `  <url>
+    <loc>${baseUrl}/blog/${a}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+`;
 }
 
 xml += `</urlset>
