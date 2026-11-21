@@ -118,4 +118,12 @@ if (fs.existsSync(distDir)) {
   const distPath = path.join(distDir, 'sitemap.xml');
   fs.writeFileSync(distPath, xml.trim() + '\n');
   console.log(`[Dist] Synced sitemap.xml with ${count} URLs at ${distPath}`);
+
+  // Sync 200.html for SPA static host fallback
+  const indexPath = path.join(distDir, 'index.html');
+  const fallback200Path = path.join(distDir, '200.html');
+  if (fs.existsSync(indexPath)) {
+    fs.copyFileSync(indexPath, fallback200Path);
+    console.log(`[Dist] Generated 200.html SPA fallback from index.html`);
+  }
 }
