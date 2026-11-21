@@ -311,7 +311,7 @@ export const articles: Article[] = [
     faqs: [
       {
         q: 'Does Prestige Appliance LLC sell refurbished or pre-owned appliances?',
-        a: 'Yes, we offer select quality refurbished and pre-owned appliances. Call our team at (954) 234-9371 to inquire about current available inventory.',
+        a: 'Yes, we offer select quality refurbished and pre-owned appliances. Call our team at (754) 318-0468 to inquire about current available inventory.',
       },
     ],
   },
@@ -553,7 +553,7 @@ export const articles: Article[] = [
     faqs: [
       {
         q: 'What should I do immediately if my refrigerator stops cooling?',
-        a: 'Keep the doors tightly closed to trap remaining cold air, place bags of ice in the fresh food compartment, and call Prestige Appliance LLC at (954) 234-9371 for prompt diagnostic scheduling.',
+        a: 'Keep the doors tightly closed to trap remaining cold air, place bags of ice in the fresh food compartment, and call Prestige Appliance LLC at (754) 318-0468 for prompt diagnostic scheduling.',
       },
     ],
   },

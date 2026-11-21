@@ -21,15 +21,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Is Prestige Appliance LLC actually located in Deerfield Beach?",
-        a: "Yes. Prestige Appliance LLC is based in Deerfield Beach, FL. We are a local appliance repair company serving Deerfield Beach and nearby South Florida communities. Call (954) 234-9371 to schedule service.",
+        a: "Yes. Prestige Appliance LLC is based in Deerfield Beach, FL. We are a local appliance repair company serving Deerfield Beach and nearby South Florida communities. Call (754) 318-0468 to schedule service.",
       },
       {
         q: "How quickly can you come to my Deerfield Beach home?",
-        a: "Because we are based in Deerfield Beach, we can often respond quickly to service calls in the area. Call us at (954) 234-9371 and we will discuss the earliest available appointment.",
+        a: "Because we are based in Deerfield Beach, we can often respond quickly to service calls in the area. Call us at (754) 318-0468 and we will discuss the earliest available appointment.",
       },
       {
         q: "Do you serve the neighborhoods near the Deerfield Beach pier?",
-        a: "Yes. We serve Deerfield Beach neighborhoods from the coastal area near the pier to the residential communities further west. Call (954) 234-9371 to confirm service for your address.",
+        a: "Yes. We serve Deerfield Beach neighborhoods from the coastal area near the pier to the residential communities further west. Call (754) 318-0468 to confirm service for your address.",
       },
     ],
   },
@@ -45,15 +45,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Boca Raton for appliance repair?",
-        a: "Yes. Prestige Appliance LLC serves Boca Raton, FL from our base in neighboring Deerfield Beach. Call (954) 234-9371 to schedule a service visit to your Boca Raton home.",
+        a: "Yes. Prestige Appliance LLC serves Boca Raton, FL from our base in neighboring Deerfield Beach. Call (754) 318-0468 to schedule a service visit to your Boca Raton home.",
       },
       {
         q: "Can you repair appliances in Boca Raton condos and apartments?",
-        a: "Yes. We service appliances in Boca Raton condos, apartments, and single-family homes. Call us at (954) 234-9371 to describe your appliance and the issue.",
+        a: "Yes. We service appliances in Boca Raton condos, apartments, and single-family homes. Call us at (754) 318-0468 to describe your appliance and the issue.",
       },
       {
         q: "How far is Boca Raton from your location?",
-        a: "Boca Raton is immediately north of our Deerfield Beach base, so we can typically reach Boca Raton homes quickly. Call (954) 234-9371 to discuss availability.",
+        a: "Boca Raton is immediately north of our Deerfield Beach base, so we can typically reach Boca Raton homes quickly. Call (754) 318-0468 to discuss availability.",
       },
     ],
   },
@@ -69,15 +69,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Pompano Beach for appliance repair?",
-        a: "Yes. Prestige Appliance LLC serves Pompano Beach, FL from our base in neighboring Deerfield Beach. Call (954) 234-9371 to schedule a service visit.",
+        a: "Yes. Prestige Appliance LLC serves Pompano Beach, FL from our base in neighboring Deerfield Beach. Call (754) 318-0468 to schedule a service visit.",
       },
       {
         q: "Can you repair both kitchen and laundry appliances in Pompano Beach?",
-        a: "Yes. We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Pompano Beach homes. Call (954) 234-9371 to describe your appliance issue.",
+        a: "Yes. We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Pompano Beach homes. Call (754) 318-0468 to describe your appliance issue.",
       },
       {
         q: "How quickly can you reach Pompano Beach?",
-        a: "Pompano Beach is immediately south of our Deerfield Beach base, so we can often reach Pompano Beach homes quickly. Call (954) 234-9371 to discuss the earliest available appointment.",
+        a: "Pompano Beach is immediately south of our Deerfield Beach base, so we can often reach Pompano Beach homes quickly. Call (754) 318-0468 to discuss the earliest available appointment.",
       },
     ],
   },
@@ -93,15 +93,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Coconut Creek for appliance repair?",
-        a: "Yes. Prestige Appliance LLC serves Coconut Creek, FL from our base in neighboring Deerfield Beach. Call (954) 234-9371 to schedule a service visit.",
+        a: "Yes. Prestige Appliance LLC serves Coconut Creek, FL from our base in neighboring Deerfield Beach. Call (754) 318-0468 to schedule a service visit.",
       },
       {
         q: "Can you repair appliances in Coconut Creek condos and homes?",
-        a: "Yes. We service appliances in both Coconut Creek condos and single-family homes. Call us at (954) 234-9371 to describe your appliance and the problem.",
+        a: "Yes. We service appliances in both Coconut Creek condos and single-family homes. Call us at (754) 318-0468 to describe your appliance and the problem.",
       },
       {
         q: "How far is Coconut Creek from your location?",
-        a: "Coconut Creek is just west of our Deerfield Beach base, so we can typically reach Coconut Creek homes quickly. Call (954) 234-9371 to discuss availability.",
+        a: "Coconut Creek is just west of our Deerfield Beach base, so we can typically reach Coconut Creek homes quickly. Call (754) 318-0468 to discuss availability.",
       },
     ],
   },
@@ -117,15 +117,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Coral Springs for appliance repair?",
-        a: "Yes. Prestige Appliance LLC serves Coral Springs, FL. Call (954) 234-9371 to schedule a service visit to your Coral Springs home.",
+        a: "Yes. Prestige Appliance LLC serves Coral Springs, FL. Call (754) 318-0468 to schedule a service visit to your Coral Springs home.",
       },
       {
         q: "What appliances do you repair in Coral Springs?",
-        a: "We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Coral Springs homes. Call (954) 234-9371 to describe your appliance issue.",
+        a: "We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Coral Springs homes. Call (754) 318-0468 to describe your appliance issue.",
       },
       {
         q: "Can you come out the same day in Coral Springs?",
-        a: "Same-day availability depends on our current schedule. Call us at (954) 234-9371 and we will discuss the earliest available appointment for your Coral Springs home.",
+        a: "Same-day availability depends on our current schedule. Call us at (754) 318-0468 and we will discuss the earliest available appointment for your Coral Springs home.",
       },
     ],
   },
@@ -141,15 +141,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Margate for appliance repair?",
-        a: "Yes. Prestige Appliance LLC serves Margate, FL. Call (954) 234-9371 to schedule a service visit to your Margate home.",
+        a: "Yes. Prestige Appliance LLC serves Margate, FL. Call (754) 318-0468 to schedule a service visit to your Margate home.",
       },
       {
         q: "What appliances do you repair in Margate?",
-        a: "We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Margate homes. Call (954) 234-9371 to describe your issue.",
+        a: "We service refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops, and ice makers in Margate homes. Call (754) 318-0468 to describe your issue.",
       },
       {
         q: "How quickly can you reach Margate?",
-        a: "Margate is near our Deerfield Beach base, so we can often reach Margate homes quickly. Call (954) 234-9371 to discuss the earliest available appointment.",
+        a: "Margate is near our Deerfield Beach base, so we can often reach Margate homes quickly. Call (754) 318-0468 to discuss the earliest available appointment.",
       },
     ],
   },
@@ -165,15 +165,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you service homes in Parkland gated communities?",
-        a: "Yes. Prestige Appliance LLC regularly services single-family residences, gated neighborhoods, and estates throughout Parkland, FL. Call (954) 234-9371 to schedule a visit.",
+        a: "Yes. Prestige Appliance LLC regularly services single-family residences, gated neighborhoods, and estates throughout Parkland, FL. Call (754) 318-0468 to schedule a visit.",
       },
       {
         q: "What appliance problems do you handle in Parkland?",
-        a: "We repair cooling failures in refrigerators and freezers, washer spin and drainage issues, dryer heating problems, oven temperature inaccuracies, cooktop ignition faults, and dishwasher leaks. Call (954) 234-9371.",
+        a: "We repair cooling failures in refrigerators and freezers, washer spin and drainage issues, dryer heating problems, oven temperature inaccuracies, cooktop ignition faults, and dishwasher leaks. Call (754) 318-0468.",
       },
       {
         q: "How quickly can a technician reach my Parkland home?",
-        a: "Because Parkland borders our neighboring service territory, our technicians can reach Parkland residences quickly. Call (954) 234-9371 to discuss the earliest available appointment.",
+        a: "Because Parkland borders our neighboring service territory, our technicians can reach Parkland residences quickly. Call (754) 318-0468 to discuss the earliest available appointment.",
       },
     ],
   },
@@ -189,15 +189,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you provide appliance repair in Lighthouse Point, FL?",
-        a: "Yes. Prestige Appliance LLC serves Lighthouse Point directly from our base in neighboring Deerfield Beach. Call (954) 234-9371 to schedule service for your home.",
+        a: "Yes. Prestige Appliance LLC serves Lighthouse Point directly from our base in neighboring Deerfield Beach. Call (754) 318-0468 to schedule service for your home.",
       },
       {
         q: "Can you fix marine or outdoor kitchen appliances in Lighthouse Point?",
-        a: "We service residential household appliances including indoor and covered patio refrigerators, freezers, ice makers, wine coolers, ovens, and ranges. Call us at (954) 234-9371 to discuss your specific unit.",
+        a: "We service residential household appliances including indoor and covered patio refrigerators, freezers, ice makers, wine coolers, ovens, and ranges. Call us at (754) 318-0468 to discuss your specific unit.",
       },
       {
         q: "How soon can a technician arrive in Lighthouse Point?",
-        a: "Lighthouse Point is immediately adjacent to Deerfield Beach, meaning our technician is only minutes away. Call (954) 234-9371 to book the earliest window.",
+        a: "Lighthouse Point is immediately adjacent to Deerfield Beach, meaning our technician is only minutes away. Call (754) 318-0468 to book the earliest window.",
       },
     ],
   },
@@ -213,15 +213,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Does Prestige Appliance LLC service Delray Beach?",
-        a: "Yes. We serve Delray Beach, FL from our Deerfield Beach location just south along Federal Highway and I-95. Call (954) 234-9371 to schedule a repair.",
+        a: "Yes. We serve Delray Beach, FL from our Deerfield Beach location just south along Federal Highway and I-95. Call (754) 318-0468 to schedule a repair.",
       },
       {
         q: "Do you repair both gas and electric appliances in Delray Beach?",
-        a: "Yes. Our technicians service both gas and electric cooking appliances, dryers, water inlet systems, and cooling units in Delray Beach homes. Call (954) 234-9371.",
+        a: "Yes. Our technicians service both gas and electric cooking appliances, dryers, water inlet systems, and cooling units in Delray Beach homes. Call (754) 318-0468.",
       },
       {
         q: "How do I book an appliance repair visit in Delray Beach?",
-        a: "Simply call us at (954) 234-9371. We discuss your appliance symptoms, check scheduling availability, and arrange your appointment directly over the phone.",
+        a: "Simply call us at (754) 318-0468. We discuss your appliance symptoms, check scheduling availability, and arrange your appointment directly over the phone.",
       },
     ],
   },
@@ -237,15 +237,15 @@ export const locations: LocationInfo[] = [
     faqs: [
       {
         q: "Do you serve Fort Lauderdale for appliance repair?",
-        a: "Yes. Prestige Appliance LLC services residences throughout Fort Lauderdale and northern Broward County. Call (954) 234-9371 to schedule an appointment.",
+        a: "Yes. Prestige Appliance LLC services residences throughout Fort Lauderdale and northern Broward County. Call (754) 318-0468 to schedule an appointment.",
       },
       {
         q: "What appliance brands and types do you service in Fort Lauderdale?",
-        a: "We diagnose and repair all major residential brands and models of refrigerators, freezers, washing machines, dryers, dishwashers, ovens, and cooktops. Call (954) 234-9371 to describe your unit.",
+        a: "We diagnose and repair all major residential brands and models of refrigerators, freezers, washing machines, dryers, dishwashers, ovens, and cooktops. Call (754) 318-0468 to describe your unit.",
       },
       {
         q: "Is there an online booking form for Fort Lauderdale?",
-        a: "No. We prioritize direct customer care and call-only scheduling. When you call (954) 234-9371, you speak with our local team immediately to coordinate your service visit.",
+        a: "No. We prioritize direct customer care and call-only scheduling. When you call (754) 318-0468, you speak with our local team immediately to coordinate your service visit.",
       },
     ],
   },

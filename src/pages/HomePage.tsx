@@ -298,7 +298,7 @@ export function HomePage() {
                     aria-label={`Call regarding ${item.title}`}
                   >
                     <Phone className="w-3 h-3 text-teal-500" />
-                    Call (954) 234-9371
+                    Call (754) 318-0468
                   </a>
                 </div>
               </div>
@@ -745,7 +745,7 @@ export function HomePage() {
                 },
                 {
                   q: 'Do you offer a warranty on repairs?',
-                  a: 'Yes. Repairs performed by Prestige Appliance LLC are covered by a warranty. Call us at (954) 234-9371 to discuss the details for your specific repair.',
+                  a: 'Yes. Repairs performed by Prestige Appliance LLC are covered by a warranty. Call us at (754) 318-0468 to discuss the details for your specific repair.',
                 },
                 {
                   q: 'Do you carry replacement parts in your service vehicles?',

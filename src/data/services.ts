@@ -44,7 +44,7 @@ export const services: ServiceInfo[] = [
       "The interior light is on but the unit is not cooling",
     ],
     repairProcess: [
-      "Call Prestige Appliance LLC at (954) 234-9371 to describe the symptoms.",
+      "Call Prestige Appliance LLC at (754) 318-0468 to describe the symptoms.",
       "Our technician arrives and inspects the refrigerator, freezer, and ice maker.",
       "We identify the faulty component and explain the repair in plain language.",
       "Once approved, we perform the repair using quality replacement parts.",
@@ -57,11 +57,11 @@ export const services: ServiceInfo[] = [
       },
       {
         q: "Should I repair or replace my refrigerator?",
-        a: "That depends on the age of the unit, the cost of the repair, and the specific failure. Our technician will diagnose the problem and give you an honest assessment so you can make an informed decision. Call (954) 234-9371 to discuss your situation.",
+        a: "That depends on the age of the unit, the cost of the repair, and the specific failure. Our technician will diagnose the problem and give you an honest assessment so you can make an informed decision. Call (754) 318-0468 to discuss your situation.",
       },
       {
         q: "How quickly can you come out for a refrigerator repair?",
-        a: "Refrigerator problems are urgent. Call us at (954) 234-9371 and we will discuss the earliest available appointment for your Deerfield Beach or South Florida area home.",
+        a: "Refrigerator problems are urgent. Call us at (754) 318-0468 and we will discuss the earliest available appointment for your Deerfield Beach or South Florida area home.",
       },
     ],
   },
@@ -93,7 +93,7 @@ export const services: ServiceInfo[] = [
       "Food packages are covered in frost or ice crystals",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe what your freezer is doing.",
+      "Call (754) 318-0468 and describe what your freezer is doing.",
       "Our technician inspects the freezer, checks temperatures, and tests components.",
       "We explain the diagnosis and the repair needed.",
       "With your approval, we complete the repair and verify the freezer reaches proper temperature.",
@@ -101,7 +101,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Can you repair standalone chest and upright freezers?",
-        a: "Yes. Prestige Appliance LLC services both standalone freezers and the freezer compartment of combined refrigerator-freezer units. Call us at (954) 234-9371 to describe your freezer and the problem.",
+        a: "Yes. Prestige Appliance LLC services both standalone freezers and the freezer compartment of combined refrigerator-freezer units. Call us at (754) 318-0468 to describe your freezer and the problem.",
       },
       {
         q: "How long can food stay frozen during a repair?",
@@ -142,7 +142,7 @@ export const services: ServiceInfo[] = [
       "You hear grinding, rattling, or loud banging during the spin cycle",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe the washer problem.",
+      "Call (754) 318-0468 and describe the washer problem.",
       "Our technician inspects the washer, checks the fill, drain, and spin functions, and tests key components.",
       "We explain what is wrong and what the repair involves.",
       "With your approval, we complete the repair and run a test cycle to confirm everything works.",
@@ -150,11 +150,11 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Do you repair both top-load and front-load washers?",
-        a: "Yes. Prestige Appliance LLC services both top-load and front-load washing machines. Call us at (954) 234-9371 to describe your washer and the issue.",
+        a: "Yes. Prestige Appliance LLC services both top-load and front-load washing machines. Call us at (754) 318-0468 to describe your washer and the issue.",
       },
       {
         q: "My washer is leaking. Should I stop using it?",
-        a: "If your washer is leaking, it is best to stop using it to prevent water damage to your floors. Call us right away at (954) 234-9371 so we can diagnose the source of the leak.",
+        a: "If your washer is leaking, it is best to stop using it to prevent water damage to your floors. Call us right away at (754) 318-0468 so we can diagnose the source of the leak.",
       },
       {
         q: "Why is my front-load washer shaking so much during the spin cycle?",
@@ -190,7 +190,7 @@ export const services: ServiceInfo[] = [
       "The dryer shuts off before the cycle finishes",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and tell us what your dryer is doing.",
+      "Call (754) 318-0468 and tell us what your dryer is doing.",
       "Our technician checks the heat source, airflow, drum rotation, and safety components.",
       "We explain the diagnosis and the recommended repair.",
       "With your approval, we complete the repair and test the dryer to confirm proper heating and tumbling.",
@@ -198,7 +198,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Do you repair both gas and electric dryers?",
-        a: "Yes. Prestige Appliance LLC services both gas and electric dryers. Because gas dryers involve a gas connection, safety is a priority — call us at (954) 234-9371 to describe the issue.",
+        a: "Yes. Prestige Appliance LLC services both gas and electric dryers. Because gas dryers involve a gas connection, safety is a priority — call us at (754) 318-0468 to describe the issue.",
       },
       {
         q: "Why is my dryer running but not getting hot?",
@@ -238,7 +238,7 @@ export const services: ServiceInfo[] = [
       "The dishwasher fills with water but does not run the wash cycle",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe what your dishwasher is doing.",
+      "Call (754) 318-0468 and describe what your dishwasher is doing.",
       "Our technician inspects the spray arms, pump, drain, door, and water inlet.",
       "We explain the cause of the problem and the recommended repair.",
       "With your approval, we complete the repair and run a test wash to confirm proper cleaning and draining.",
@@ -254,7 +254,7 @@ export const services: ServiceInfo[] = [
       },
       {
         q: "Should I repair my dishwasher or buy a new one?",
-        a: "It depends on the age and condition of the unit and the cost of the repair. Our technician will give you an honest diagnosis so you can decide with confidence. Call (954) 234-9371 to discuss.",
+        a: "It depends on the age and condition of the unit and the cost of the repair. Our technician will give you an honest diagnosis so you can decide with confidence. Call (754) 318-0468 to discuss.",
       },
     ],
   },
@@ -286,7 +286,7 @@ export const services: ServiceInfo[] = [
       "The bake element has visible blisters or burn marks",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe the oven problem.",
+      "Call (754) 318-0468 and describe the oven problem.",
       "Our technician inspects the heating element, igniter, sensor, and controls.",
       "We explain the diagnosis and the repair needed.",
       "With your approval, we complete the repair and test the oven to confirm it heats evenly and accurately.",
@@ -294,7 +294,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Do you repair both gas and electric ovens?",
-        a: "Yes. Prestige Appliance LLC services gas and electric ovens, wall ovens, and freestanding ranges. If you smell gas, call us right away at (954) 234-9371.",
+        a: "Yes. Prestige Appliance LLC services gas and electric ovens, wall ovens, and freestanding ranges. If you smell gas, call us right away at (754) 318-0468.",
       },
       {
         q: "Why is my electric oven not heating but the stove top works?",
@@ -334,7 +334,7 @@ export const services: ServiceInfo[] = [
       "The burner heats only on the high setting",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe which burner is causing trouble.",
+      "Call (754) 318-0468 and describe which burner is causing trouble.",
       "Our technician inspects the igniters, elements, switches, and control knobs.",
       "We explain what is wrong and the recommended repair.",
       "With your approval, we complete the repair and test each burner to confirm proper operation.",
@@ -342,7 +342,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "My gas stove keeps clicking. Is that dangerous?",
-        a: "Continuous clicking usually means the igniter is wet or dirty, or a switch is stuck. It is best to turn off the burner and call for service. Call us at (954) 234-9371.",
+        a: "Continuous clicking usually means the igniter is wet or dirty, or a switch is stuck. It is best to turn off the burner and call for service. Call us at (754) 318-0468.",
       },
       {
         q: "Can a cracked glass cooktop be repaired?",
@@ -382,7 +382,7 @@ export const services: ServiceInfo[] = [
       "You smell gas near the range",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe what the range is and is not doing.",
+      "Call (754) 318-0468 and describe what the range is and is not doing.",
       "Our technician inspects both the oven and cooktop components.",
       "We explain the diagnosis for each problem area.",
       "With your approval, we complete the repair and test the full range — oven and cooktop.",
@@ -390,7 +390,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Can you fix both the oven and the cooktop in one visit?",
-        a: "In most cases, yes. Because a range is a single appliance, our technician can diagnose both the oven and cooktop during the same service call. Call (954) 234-9371 to describe both issues.",
+        a: "In most cases, yes. Because a range is a single appliance, our technician can diagnose both the oven and cooktop during the same service call. Call (754) 318-0468 to describe both issues.",
       },
       {
         q: "My range display went blank. What could be wrong?",
@@ -398,7 +398,7 @@ export const services: ServiceInfo[] = [
       },
       {
         q: "Is it safe to keep using my gas range if I smell gas?",
-        a: "If you smell gas, turn off the range and do not use it until it has been inspected. Call us at (954) 234-9371 to schedule a diagnosis.",
+        a: "If you smell gas, turn off the range and do not use it until it has been inspected. Call us at (754) 318-0468 to schedule a diagnosis.",
       },
     ],
   },
@@ -430,7 +430,7 @@ export const services: ServiceInfo[] = [
       "The induction cooktop flashes an error code",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe the cooktop and the burner that is causing trouble.",
+      "Call (754) 318-0468 and describe the cooktop and the burner that is causing trouble.",
       "Our technician inspects the igniters, elements, switches, and glass surface.",
       "We explain the diagnosis and the recommended repair.",
       "With your approval, we complete the repair and test every burner.",
@@ -446,7 +446,7 @@ export const services: ServiceInfo[] = [
       },
       {
         q: "My gas cooktop keeps clicking. What should I do?",
-        a: "Turn off the affected burner. Continuous clicking is often caused by a wet or dirty igniter or a stuck switch. Call us at (954) 234-9371 to schedule a repair.",
+        a: "Turn off the affected burner. Continuous clicking is often caused by a wet or dirty igniter or a stuck switch. Call us at (754) 318-0468 to schedule a repair.",
       },
     ],
   },
@@ -478,7 +478,7 @@ export const services: ServiceInfo[] = [
       "Ice has an unusual taste or odor",
     ],
     repairProcess: [
-      "Call (954) 234-9371 and describe what your ice maker is doing.",
+      "Call (754) 318-0468 and describe what your ice maker is doing.",
       "Our technician checks the water supply, the inlet valve, the ice maker assembly, and the ice bin.",
       "We explain the diagnosis and the recommended repair.",
       "With your approval, we complete the repair and confirm the ice maker is producing ice properly.",
@@ -486,7 +486,7 @@ export const services: ServiceInfo[] = [
     faqs: [
       {
         q: "Can you repair the ice maker inside my refrigerator?",
-        a: "Yes. Prestige Appliance LLC services built-in refrigerator ice makers as well as standalone ice machines. Call us at (954) 234-9371 to describe the issue.",
+        a: "Yes. Prestige Appliance LLC services built-in refrigerator ice makers as well as standalone ice machines. Call us at (754) 318-0468 to describe the issue.",
       },
       {
         q: "Why is my ice maker making hollow or small cubes?",
@@ -494,7 +494,7 @@ export const services: ServiceInfo[] = [
       },
       {
         q: "How do I know if the problem is the ice maker or the water line?",
-        a: "Our technician will check both the water supply to the refrigerator and the ice maker assembly itself. Call (954) 234-9371 and we will diagnose the full ice-making system.",
+        a: "Our technician will check both the water supply to the refrigerator and the ice maker assembly itself. Call (754) 318-0468 and we will diagnose the full ice-making system.",
       },
     ],
   },

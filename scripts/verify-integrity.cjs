@@ -23,8 +23,8 @@ if (locationMatches.length !== 10) {
 }
 
 // Verify phone number in business.ts
-const expectedPhone = '+1 (954) 234-9371';
-const expectedRaw = '+19542349371';
+const expectedPhone = '+1 (754) 318-0468';
+const expectedRaw = '+17543180468';
 
 if (!businessFile.includes(expectedPhone)) {
   console.error(`Missing expected phone ${expectedPhone} in business.ts`);

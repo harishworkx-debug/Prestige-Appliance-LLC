@@ -161,7 +161,7 @@ export function BookOnlinePage() {
           <p className="text-navy-200 text-sm mb-6">
             Operating from our hub at {business.streetAddress}, {business.primaryCity}, FL 33441, we schedule in-home repairs across northern Broward and southern Palm Beach counties.
           </p>
-          <CallButton size="lg" label={`Call (954) 234-9371 to Schedule`} />
+          <CallButton size="lg" label={`Call (754) 318-0468 to Schedule`} />
         </div>
       </section>
     </>

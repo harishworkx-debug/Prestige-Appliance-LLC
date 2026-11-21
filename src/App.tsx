@@ -14,29 +14,13 @@ import { TermsPage } from './pages/TermsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { SlugDispatcher } from './pages/SlugDispatcher';
 
-// 🎛️ ONE-CLICK WEBSITE MODE SWITCHER
-import { USE_LANDING_PAGE_AS_HOME } from './siteMode';
-import { StandaloneLandingPage } from './standalone-landing/StandaloneLandingPage';
-
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
-          {/* Standalone Landing Page Standby / Direct Routes */}
-          <Route path="/home-page" element={<StandaloneLandingPage />} />
-          <Route path="/appliance-repair-deerfield-beach-fl" element={<StandaloneLandingPage />} />
-
-          {/* Root Route Toggle: Standalone Landing Page vs Original Full Multi-Page Website */}
-          {USE_LANDING_PAGE_AS_HOME ? (
-            <Route path="/" element={<StandaloneLandingPage />} />
-          ) : null}
-
-          {/* Main Website Route Tree wrapped in Layout */}
           <Route element={<Layout />}>
-            {!USE_LANDING_PAGE_AS_HOME && (
-              <Route path="/" element={<HomePage />} />
-            )}
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/service-areas" element={<ServiceAreasPage />} />

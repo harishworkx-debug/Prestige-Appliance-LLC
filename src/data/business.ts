@@ -1,8 +1,8 @@
 export const business = {
   name: "Prestige Appliance LLC",
-  phone: "+1 (954) 234-9371",
-  phoneRaw: "+19542349371",
-  phoneDisplay: "(954) 234-9371",
+  phone: "+1 (754) 318-0468",
+  phoneRaw: "+17543180468",
+  phoneDisplay: "(754) 318-0468",
   category: "Appliance Repair Service",
   website: "https://www.prestigeappliancellc.com/",
   googleMaps: "https://maps.app.goo.gl/U9aDCbFHWBc2hbot8",
